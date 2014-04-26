@@ -10,7 +10,8 @@ tiferr = (fail, succ) -> iferr fail, (a...) ->
 
 # Throw errors
 throwr = (err) -> throw err
-throwerr = (succ) -> iferr throwr, succ
+throwerr = (succ) -> iferr throwr, succ or noop
+noop = ->
 
 module.exports = exports = iferr
 exports.iferr = iferr
