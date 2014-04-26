@@ -4,6 +4,9 @@
     __slice = [].slice;
 
   iferr = function(fail, succ) {
+    if (succ == null) {
+      succ = noop;
+    }
     return function() {
       var a, err;
       err = arguments[0], a = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
@@ -33,7 +36,7 @@
   };
 
   throwerr = function(succ) {
-    return iferr(throwr, succ || noop);
+    return iferr(throwr, succ);
   };
 
   noop = function() {};
