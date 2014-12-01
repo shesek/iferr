@@ -34,7 +34,7 @@ get_friends_count = (id, cb) ->
       cb null, friends.length
 ```
 
-(TODO: document tiferr and throwerr)
+(TODO: document tiferr, throwerr and printerr)
 
 ## License
 MIT
