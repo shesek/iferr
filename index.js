@@ -3,6 +3,8 @@
   var exports, iferr, noop, printerr, throwerr, tiferr,
     __slice = [].slice;
 
+  noop = function() {};
+
   iferr = function(fail, succ) {
     if (succ == null) {
       succ = noop;
@@ -38,8 +40,6 @@
   printerr = iferr(function(err) {
     return console.error(err.stack || err);
   });
-
-  noop = function() {};
 
   module.exports = exports = iferr;
 

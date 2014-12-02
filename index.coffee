@@ -1,3 +1,5 @@
+noop = ->
+
 # Delegates to `succ` on sucecss or to `fail` on error
 # ex: Thing.load 123, iferr cb, (thing) -> ...
 iferr = (fail, succ=noop) -> (err, a...) ->
@@ -16,8 +18,6 @@ throwerr = iferr.bind null, (err) -> throw err
 # Prints errors when one is passed, or does nothing otherwise
 # ex: thing.save printerr
 printerr = iferr (err) -> console.error err.stack or err
-
-noop = ->
 
 module.exports = exports = iferr
 exports.iferr = iferr
