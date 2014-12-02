@@ -1,10 +1,8 @@
-noop = ->
-
 # Delegates to `succ` on sucecss or to `fail` on error
 # ex: Thing.load 123, iferr cb, (thing) -> ...
-iferr = (fail, succ=noop) -> (err, a...) ->
+iferr = (fail, succ) -> (err, a...) ->
   if err? then fail err
-  else succ a...
+  else succ? a...
 
 # Like iferr, but also catches errors thrown from `succ` and passes to `fail`
 tiferr = (fail, succ) -> iferr fail, (a...) ->

@@ -1,6 +1,6 @@
 {
   "name": "iferr",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Higher-order functions for easier error handling",
   "main": "index.js",
   "scripts": {
