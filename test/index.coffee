@@ -1,4 +1,4 @@
-{ iferr, tiferr, throwerr } = require '../index.coffee'
+{ iferr, tiferr, throwerr } = require '../iferr'
 { equal: eq, throws } = require 'assert'
 
 invoke_fail = (cb) -> cb new Error 'callback error'

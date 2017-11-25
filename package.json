@@ -2,10 +2,12 @@
   "name": "iferr",
   "version": "0.1.5",
   "description": "Higher-order functions for easier error handling",
-  "main": "index.js",
+  "main": "iferr.js",
   "scripts": {
-    "test": "mocha",
-    "prepublish": "coffee -c index.coffee"
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "repository": {
     "type": "git",
