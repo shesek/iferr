@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/shesek/iferr",
   "devDependencies": {
-    "coffee-script": "^1.12.7",
+    "coffeescript": "^2.3.1",
     "mocha": "^4.0.1"
   }
 }
