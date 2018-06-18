@@ -1,9 +1,11 @@
 {
   "name": "iferr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Higher-order functions for easier error handling",
   "main": "iferr.js",
-  "files": [ "iferr.js" ],
+  "files": [
+    "iferr.js"
+  ],
   "scripts": {
     "test": "mocha"
   },
