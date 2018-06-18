@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Higher-order functions for easier error handling",
   "main": "iferr.js",
+  "files": [ "iferr.js" ],
   "scripts": {
     "test": "mocha"
   },
