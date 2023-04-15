@@ -28,6 +28,6 @@
   "homepage": "https://github.com/shesek/iferr",
   "devDependencies": {
     "coffeescript": "^2.3.1",
-    "mocha": "^4.0.1"
+    "mocha": "^10.2.0"
   }
 }
